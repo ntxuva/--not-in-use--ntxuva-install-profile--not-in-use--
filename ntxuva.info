@@ -1,0 +1,294 @@
+; Packaging information for ntxuva
+name = "ntxuva"
+description = "Projecto de Monitoria Participativa de Serviços"
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependências
+; ----------
+; Administration
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+; Chaos tool suite
+dependencies[] = ctools
+dependencies[] = page_manager
+dependencies[] = views_content
+; Charts
+dependencies[] = charts
+dependencies[] = charts_google
+; Core
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contact
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = translation
+dependencies[] = update
+dependencies[] = user
+; Date/Time
+dependencies[] = date
+dependencies[] = date_api
+; Development
+dependencies[] = profiler_builder
+; Fields
+dependencies[] = bootstrap_fieldgroup
+dependencies[] = field_formatter_class
+dependencies[] = field_formatter_css_class
+dependencies[] = field_group
+dependencies[] = field_permissions
+; Geolocation
+dependencies[] = geolocation
+dependencies[] = geolocation_googlemaps
+dependencies[] = geolocation_osm
+; Mail
+dependencies[] = smtp
+; Mark-a-Spot
+dependencies[] = markaspot_archive
+dependencies[] = markaspot_default_content
+dependencies[] = markaspot_log
+dependencies[] = markaspot_logic
+dependencies[] = markaspot_open311
+dependencies[] = markaspot_stats
+dependencies[] = markaspot_uuid
+; Multilingual
+dependencies[] = l10n_update
+; Multilingual - Internationalization
+dependencies[] = i18n
+dependencies[] = i18n_contact
+dependencies[] = i18n_field
+dependencies[] = i18n_menu
+dependencies[] = i18n_panels
+dependencies[] = i18n_path
+dependencies[] = i18n_string
+dependencies[] = i18n_sync
+dependencies[] = i18n_taxonomy
+dependencies[] = i18n_translation
+; OAuth
+dependencies[] = oauth_common
+; Other
+dependencies[] = backup_migrate
+dependencies[] = entity
+dependencies[] = field_formatter_settings
+dependencies[] = libraries
+dependencies[] = login_destination
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = twitter
+; Panels
+dependencies[] = panels
+dependencies[] = panels_ipe
+; Services
+dependencies[] = services
+; Services - servers
+dependencies[] = rest_server
+; UUID
+dependencies[] = uuid
+; User interface
+dependencies[] = chosen
+dependencies[] = jquery_update
+; Variable
+dependencies[] = variable
+; Views
+dependencies[] = better_exposed_filters
+dependencies[] = views
+dependencies[] = views_json
+dependencies[] = views_ui
+; VoIP Drupal
+dependencies[] = voip
+dependencies[] = voipcall
+dependencies[] = voipscriptsamples
+dependencies[] = voiptwilio
+; Features
+dependencies[] = features
+dependencies[] = mark_a_spot
+dependencies[] = mark_a_spot_admin
+dependencies[] = mark_a_spot_default_content
+dependencies[] = mark_a_spot_log
+dependencies[] = voipscriptui
+
+; ----------
+; Variáveis
+; ----------
+variables[additional_settings__active_tab_report] = 'edit-submission'
+variables[admin_theme] = 'ember'
+variables[anonymous] = 'Anónimo'
+variables[backup_migrate_destination_id] = 'manual'
+variables[backup_migrate_profile_id] = 'default'
+variables[backup_migrate_source_id] = 'db'
+variables[chosen_minimum_single] = 3
+variables[comment_default_per_page_report] = '50'
+variables[comment_preview_report] = '0'
+variables[comment_report] = '2'
+variables[configurable_timezones] = 1
+variables[contact_default_status] = 1
+variables[date_api_version] = '7.2'
+variables[date_default_timezone] = 'Africa/Maputo'
+variables[date_first_day] = '0'
+variables[date_format_long] = 'l, F j, Y - H:i'
+variables[date_format_medium] = 'D, d/m/Y - H:i'
+variables[date_format_short] = 'd/m/Y - H:i'
+variables[default_nodes_main] = '10'
+variables[default_page_manager_pages][in_cio] = true
+variables[features_admin_menu_links_menus][management] = 'management'
+variables[features_admin_menu_links_menus][main-menu] = 'main-menu'
+variables[features_admin_menu_links_menus][navigation] = 'navigation'
+variables[features_admin_menu_links_menus][menu-secondary-navigation] = 'menu-secondary-navigation'
+variables[features_admin_menu_links_menus][user-menu] = 'user-menu'
+variables[features_admin_show_component_ctools] = 1
+variables[features_admin_show_component_dependencies] = 1
+variables[features_admin_show_component_field_base] = 1
+variables[features_admin_show_component_field_group] = 1
+variables[features_admin_show_component_field_instance] = 1
+variables[features_admin_show_component_filter] = 1
+variables[features_admin_show_component_image] = 1
+variables[features_admin_show_component_language] = 1
+variables[features_admin_show_component_menu_custom] = 1
+variables[features_admin_show_component_menu_links] = 1
+variables[features_admin_show_component_node] = 1
+variables[features_admin_show_component_oauth_common_context] = 1
+variables[features_admin_show_component_page_manager_handlers] = 1
+variables[features_admin_show_component_page_manager_pages] = 1
+variables[features_admin_show_component_panels_layout] = 1
+variables[features_admin_show_component_panels_renderer_pipeline] = 1
+variables[features_admin_show_component_services_endpoint] = 1
+variables[features_admin_show_component_taxonomy] = 1
+variables[features_admin_show_component_user_permission] = 1
+variables[features_admin_show_component_user_role] = 1
+variables[features_admin_show_component_uuid_entities] = 1
+variables[features_admin_show_component_variable] = 1
+variables[features_admin_show_component_views_view] = 1
+variables[features_default_export_path] = 'sites/all/modules'
+variables[features_rebuild_on_flush] = 1
+variables[field_bundle_settings_node__report][view_modes][teaser][custom_settings] = true
+variables[field_bundle_settings_node__report][view_modes][full][custom_settings] = false
+variables[field_bundle_settings_node__report][view_modes][rss][custom_settings] = false
+variables[field_bundle_settings_node__report][view_modes][search_index][custom_settings] = false
+variables[field_bundle_settings_node__report][view_modes][search_result][custom_settings] = false
+variables[field_bundle_settings_node__report][view_modes][report_list][custom_settings] = true
+variables[field_bundle_settings_node__report][view_modes][token][custom_settings] = false
+variables[field_bundle_settings_node__report][extra_fields][form][title][weight] = '-5'
+variables[field_bundle_settings_node__report][extra_fields][form][path][weight] = '5'
+variables[filter_fallback_format] = 'plain_text'
+variables[javascript_parsed][0] = 'misc/drupal.js'
+variables[javascript_parsed][1] = 'profiles/markaspot/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js'
+variables[javascript_parsed][2] = 'misc/jquery.once.js'
+variables[javascript_parsed][3] = 'modules/system/system.js'
+variables[javascript_parsed][4] = 'misc/form.js'
+variables[javascript_parsed][5] = 'profiles/markaspot/libraries/chosen/chosen.jquery.min.js'
+variables[javascript_parsed][6] = 'profiles/markaspot/modules/contrib/chosen/chosen.js'
+variables[javascript_parsed][7] = 'profiles/markaspot/modules/contrib/admin_menu/admin_menu.js'
+variables[javascript_parsed][8] = 'profiles/markaspot/modules/contrib/admin_menu/admin_menu_toolbar/admin_menu_toolbar.js'
+variables[javascript_parsed][9] = 'sites/all/modules/profiler_builder/js/profiler_builder.js'
+variables[javascript_parsed][10] = 'misc/states.js'
+variables[jquery_update_jquery_version] = '1.7'
+variables[language_content_type_report] = '0'
+variables[language_count] = 2
+variables[language_negotiation_language_content][locale-interface][callbacks][language] = 'locale_language_from_interface'
+variables[language_negotiation_language_content][locale-interface][file] = 'includes/locale.inc'
+variables[language_negotiation_language_url][locale-url][callbacks][language] = 'locale_language_from_url'
+variables[language_negotiation_language_url][locale-url][callbacks][switcher] = 'locale_language_switcher_url'
+variables[language_negotiation_language_url][locale-url][callbacks][url_rewrite] = 'locale_language_url_rewrite_url'
+variables[language_negotiation_language_url][locale-url][file] = 'includes/locale.inc'
+variables[language_negotiation_language_url][locale-url-fallback][callbacks][language] = 'locale_language_url_fallback'
+variables[language_negotiation_language_url][locale-url-fallback][file] = 'includes/locale.inc'
+variables[language_types][language] = true
+variables[language_types][language_content] = false
+variables[language_types][language_url] = false
+variables[mail_system][default-system] = 'SmtpMailSystem'
+variables[markaspot_logic_address] = 'Avenida Acordos de Lusaka, 2631 Maputo, Moçambique'
+variables[markaspot_logic_archive_days] = '5'
+variables[markaspot_logic_bbox_nw_lat] = '-25.821196569439113'
+variables[markaspot_logic_bbox_nw_lng] = '32.403831481933594'
+variables[markaspot_logic_bbox_se_lat] = '-25.99722075964144'
+variables[markaspot_logic_bbox_se_lng] = '32.66338348388672'
+variables[markaspot_logic_city] = 'Maputo City, Cidade de Maputo, Maputo, Maputo Cidade'
+variables[markaspot_logic_country] = 'Deutschland'
+variables[markaspot_logic_ini_lat] = '-25.92825385611852'
+variables[markaspot_logic_ini_lng] = '32.54270553588867'
+variables[markaspot_logic_map_type] = '2'
+variables[markaspot_logic_open311_changeset] = '2013-11-03 00:00'
+variables[markaspot_logic_open311_contact] = 'You can email or call for assistance api@mycity.org +1 (555) 555-5555'
+variables[markaspot_logic_open311_key_service] = 'You can request a key here: http://api.mycity.gov/api_key/request'
+variables[markaspot_logic_open311_status_closed] = '7,8'
+variables[markaspot_logic_open311_status_open] = '5,6'
+variables[markaspot_logic_open311_status_open_start] = '5'
+variables[markaspot_logic_open311_type] = 'production'
+variables[markaspot_logic_osm_custom_attribution] = 'Map Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+variables[markaspot_logic_osm_custom_tile_url] = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+variables[markaspot_logic_title_pattern] = '0'
+variables[markaspot_logic_tweetSearch] = 1
+variables[markaspot_logic_twittername] = '@mascity'
+variables[markaspot_logic_uuid_pattern] = '0'
+variables[markaspot_logic_uuid_title] = 1
+variables[markaspot_logic_zip] = '50321'
+variables[menu_main_links_source] = 'user-menu'
+variables[menu_options_report][0] = 'main-menu'
+variables[menu_parent_report] = 'main-menu:0'
+variables[menu_secondary_links_source] = 'main-menu'
+variables[node_admin_theme] = '1'
+variables[node_options_page][0] = 'status'
+variables[node_options_report][0] = 'status'
+variables[node_preview_report] = '0'
+variables[node_submitted_report] = 1
+variables[node_uuid] = 'edfd-1'
+variables[pathauto_blog_pattern] = 'blogs/[user:name]'
+variables[pathauto_forum_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_node_pattern] = 'content/[node:title]'
+variables[pathauto_node_report_pattern] = 'reports/[node:uuid]'
+variables[pathauto_punctuation_hyphen] = 1
+variables[pathauto_taxonomy_term_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_user_pattern] = 'users/[user:name]'
+variables[path_alias_whitelist][node] = true
+variables[path_alias_whitelist][taxonomy] = true
+variables[path_alias_whitelist][user] = true
+variables[site_frontpage] = 'node/13'
+variables[theme_default] = 'ntxuva'
+variables[user_block_whois_new_count] = '5'
+variables[user_cancel_method] = 'user_cancel_block'
+variables[user_default_timezone] = '0'
+variables[user_pictures] = 1
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_path] = 'pictures'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = '0'
+variables[variable_module_list][i18n][0] = 'i18n_language_list'
+variables[variable_module_list][i18n_string][0] = 'i18n_string_translate_langcode_en'
+variables[variable_module_list][i18n_string][1] = 'i18n_string_translate_langcode_pt-pt'
+variables[variable_module_list][i18n_string][2] = 'i18n_string_allowed_formats'
+variables[variable_module_list][i18n_string][3] = 'i18n_string_source_language'
+variables[variable_module_list][i18n_string][4] = 'i18n_string_debug'
+variables[variable_module_list][i18n_sync][0] = 'i18n_sync_node_type_article'
+variables[variable_module_list][i18n_sync][1] = 'i18n_sync_node_type_page'
+variables[variable_module_list][i18n_sync][2] = 'i18n_sync_node_type_report'
+variables[voipcall_cid_name] = 'm4p5'
+variables[voipcall_cid_number] = '+351308804652'
+variables[voipcall_default_session_time] = '0'
+variables[voipcall_inbound_call_script_name] = 'voipcall_default_inbound_call_script'
+variables[voipcall_inbound_text_script_name] = 'voipcall_default_inbound_text_script'
+variables[voipcall_outbound_call_script_name] = 'voipcall_default_outbound_call_script'
+variables[voipserver_kookoo_voice_id] = 'EN'
+variables[voipserver_kookoo_woman_voice_id] = 'EN'
+variables[voipserver_twilio_man_voice_id] = 'dave-twilio'
+variables[voipserver_twilio_voice_id] = 'portuguese-portugal'
+variables[voipserver_twilio_woman_voice_id] = 'portuguese-portugal'
+variables[voip_default_server] = 'twilio'
