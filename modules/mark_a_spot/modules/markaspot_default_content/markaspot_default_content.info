@@ -1,0 +1,4 @@
+name = Mark-a-Spot Default Content
+package = "Mark-a-Spot"
+description = Blocks and default content
+core = "7.x"
