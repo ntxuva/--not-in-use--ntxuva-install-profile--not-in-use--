@@ -40,14 +40,15 @@ projects[field_permissions][subdir] = "contrib"
 projects[geolocation][version] = "1.4"
 projects[geolocation][subdir] = "contrib"
 
-projects[geolocation_osm][version] = "unknown"
+projects[geolocation_osm][type] = module
 projects[geolocation_osm][subdir] = "contrib"
+projects[geolocation_osm][download][url] = "http://git.drupal.org/sandbox/markaspot/2182047.git"
 
 projects[smtp][version] = "1.0"
 projects[smtp][subdir] = "contrib"
 
-projects[markaspot][version] = "2.x-dev"
-projects[markaspot][subdir] = "contrib"
+;projects[markaspot][version] = "2.x-dev"
+;projects[markaspot][subdir] = "contrib"
 
 projects[l10n_update][version] = "1.0"
 projects[l10n_update][subdir] = "contrib"
@@ -60,6 +61,7 @@ projects[panels][subdir] = "contrib"
 
 projects[oauth][version] = "3.2"
 projects[oauth][subdir] = "contrib"
+projects[workbench][subdir] = "contrib"
 
 projects[backup_migrate][version] = "2.8"
 projects[backup_migrate][subdir] = "contrib"
@@ -87,6 +89,7 @@ projects[token][subdir] = "contrib"
 
 projects[twitter][version] = "5.8"
 projects[twitter][subdir] = "contrib"
+projects[twitter][patch][2132231] = "https://drupal.org/files/issues/Twitter-add_geo_and_entities_Twitter_object_2132231-1_0.patch"
 
 projects[panels][version] = "3.4"
 projects[panels][subdir] = "contrib"
@@ -99,6 +102,7 @@ projects[services][subdir] = "contrib"
 
 projects[uuid][version] = "1.0-alpha5"
 projects[uuid][subdir] = "contrib"
+projects[uuid][patch][2161375] = https://drupal.org/files/issues/custom_method_of_UUID_creation_2161375_1.patch
 
 projects[chosen][version] = "2.0-beta4"
 projects[chosen][subdir] = "contrib"
@@ -120,6 +124,11 @@ projects[views_datasource][subdir] = "contrib"
 
 projects[voipdrupal][version] = "1.0-beta5"
 projects[voipdrupal][subdir] = "contrib"
+
+projects[geophp][subdir] = "contrib"
+
+projects[views_geojson][subdir] = "contrib"
+projects[views_geojson][version] = 1.x-dev
 
 ; +++++ Themes +++++
 
