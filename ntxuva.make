@@ -11,7 +11,7 @@ includes[] = "drupal-org.make"
 ; NTXUVA Profile
 projects[ntxuva][type] = profile
 projects[ntxuva][download][type] = "git"
-projects[markaspot][download][url] = "https://github.com/ntxuva/ntxuva.git"
+projects[ntxuva][download][url] = "https://github.com/ntxuva/ntxuva.git"
 projects[ntxuva][download][branch] = "master"
 
 ; Mark-a-Spot Profile
