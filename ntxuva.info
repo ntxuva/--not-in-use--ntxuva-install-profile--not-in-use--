@@ -68,6 +68,7 @@ dependencies[] = markaspot_logic
 dependencies[] = markaspot_open311
 dependencies[] = markaspot_stats
 dependencies[] = markaspot_uuid
+dependencies[] = markaspot_radar
 ; Multilingual
 dependencies[] = l10n_update
 ; Multilingual - Internationalization
@@ -104,6 +105,7 @@ dependencies[] = rest_server
 dependencies[] = uuid
 ; User interface
 dependencies[] = chosen
+dependencies[] = geophp
 dependencies[] = jquery_update
 ; Variable
 dependencies[] = variable
@@ -112,6 +114,7 @@ dependencies[] = better_exposed_filters
 dependencies[] = views
 dependencies[] = views_json
 dependencies[] = views_ui
+dependencies[] = views_geojson
 ; VoIP Drupal
 dependencies[] = voip
 dependencies[] = voipcall
@@ -189,14 +192,14 @@ variables[field_bundle_settings_node__report][extra_fields][form][title][weight]
 variables[field_bundle_settings_node__report][extra_fields][form][path][weight] = '5'
 variables[filter_fallback_format] = 'plain_text'
 variables[javascript_parsed][0] = 'misc/drupal.js'
-variables[javascript_parsed][1] = 'profiles/markaspot/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js'
+variables[javascript_parsed][1] = 'profiles/ntxuva/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js'
 variables[javascript_parsed][2] = 'misc/jquery.once.js'
 variables[javascript_parsed][3] = 'modules/system/system.js'
 variables[javascript_parsed][4] = 'misc/form.js'
-variables[javascript_parsed][5] = 'profiles/markaspot/libraries/chosen/chosen.jquery.min.js'
-variables[javascript_parsed][6] = 'profiles/markaspot/modules/contrib/chosen/chosen.js'
-variables[javascript_parsed][7] = 'profiles/markaspot/modules/contrib/admin_menu/admin_menu.js'
-variables[javascript_parsed][8] = 'profiles/markaspot/modules/contrib/admin_menu/admin_menu_toolbar/admin_menu_toolbar.js'
+variables[javascript_parsed][5] = 'profiles/ntxuva/libraries/chosen/chosen.jquery.min.js'
+variables[javascript_parsed][6] = 'profiles/ntxuva/modules/contrib/chosen/chosen.js'
+variables[javascript_parsed][7] = 'profiles/ntxuva/modules/contrib/admin_menu/admin_menu.js'
+variables[javascript_parsed][8] = 'profiles/ntxuva/modules/contrib/admin_menu/admin_menu_toolbar/admin_menu_toolbar.js'
 variables[javascript_parsed][9] = 'sites/all/modules/profiler_builder/js/profiler_builder.js'
 variables[javascript_parsed][10] = 'misc/states.js'
 variables[jquery_update_jquery_version] = '1.7'
@@ -221,7 +224,7 @@ variables[markaspot_logic_bbox_nw_lng] = '32.403831481933594'
 variables[markaspot_logic_bbox_se_lat] = '-25.99722075964144'
 variables[markaspot_logic_bbox_se_lng] = '32.66338348388672'
 variables[markaspot_logic_city] = 'Maputo City, Cidade de Maputo, Maputo, Maputo Cidade'
-variables[markaspot_logic_country] = 'Deutschland'
+variables[markaspot_logic_country] = 'Moçambique'
 variables[markaspot_logic_ini_lat] = '-25.92825385611852'
 variables[markaspot_logic_ini_lng] = '32.54270553588867'
 variables[markaspot_logic_map_type] = '2'

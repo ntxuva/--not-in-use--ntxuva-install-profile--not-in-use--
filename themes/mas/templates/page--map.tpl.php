@@ -1,13 +1,12 @@
 <?php
 /**
  * @file
- * Page template for Mark-a-Spot
+ * Map page template for Mark-a-Spot
  */
 ?>
-
 <div class="navbar-wrapper">
   <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container-fluid secondary">
+    <div class="container-fluid">
       <div class="navbar-header">
         <?php if ($logo): ?>
           <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -16,7 +15,7 @@
         <?php endif; ?>
 
         <?php if (!empty($site_name)): ?>
-          <a class="name navbar-brand secondary" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"></a>
+          <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
         <?php endif; ?>
 
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -31,7 +30,7 @@
 
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <div class="collapse navbar-collapse">
-          <nav class="nav navbar-nav">
+          <nav role="navigation">
             <?php if (!empty($primary_nav)): ?>
               <?php print render($primary_nav); ?>
             <?php endif; ?>
@@ -47,54 +46,33 @@
     </div>
   </div>
 </div>
+<div id="map" style="width:100%; height:100%"> </div>
+<div class="main-container container">
 
+  <header role="banner" id="page-header">
+    <?php if (!empty($site_slogan)): ?>
+      <p class="lead"><?php print $site_slogan; ?></p>
+    <?php endif; ?>
 
-<div class="main-container container page">
+    <?php print render($page['header']); ?>
+  </header> <!-- /#header -->
 
-  <div class="row">
+  <div class="row map-tools">
+
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-md-3" role="complementary">
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
 
-    <?php if (empty($page['sidebar_second'])): ?>
-      <section class="col-md-12">
-    <?php else:; ?>
-      <section class="col-md-7">
-    <?php endif; ?>
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted hero-unit"><?php print render($page['highlighted']); ?></div>
-      <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-      <?php endif; ?>
-      <?php if (!empty($page['help'])): ?>
-        <div class="well secondary"><?php print render($page['help']); ?></div>
-      <?php endif; ?>
-      <?php if (!empty($action_links)): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-    </section>
-
     <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-md-4 col-md-offset-1" role="complementary">
+      <aside class="" role="complementary">
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
 
   </div>
 </div>
-
-<footer class="footer navbar-inverse">
+<footer class="footer navbar-inverse navbar-fixed-bottom">
   <?php print render($page['footer']); ?>
 </footer>
