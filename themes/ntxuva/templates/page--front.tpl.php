@@ -63,7 +63,10 @@
             $block = module_invoke('markaspot_default_content', 'block_view', 'add_reports');
             print render($block['content']);
           ?>
-
+          <?php
+            $block = module_invoke('markaspot_default_content', 'block_view', 'watch_reports');
+            print render($block['content']);
+          ?>
         </div>
       </div>
 
@@ -74,27 +77,10 @@
 </div>
 
 <div class="section-container">
+  <div class="section-title">como funciona</div>
   <div class="section-row">
     <div class="col-wrapper">
     	<div class="custom-col">
     		<span><img src="profiles/markaspot/themes/ntxuva/images/icon_one.png"></span>
-    		<h2>Identifica</h2>
-    		<p>dwfwef ewf ew fwe f wef ewf ewf wefwe</p>
-    	</div>
-    	<div class="custom-col">
-    		<span><img src="profiles/markaspot/themes/ntxuva/images/icon_two.png"></span>
-    		<h2>Reporta</h2>
-    		<p>dwfwef ewf ew fwe f wef ewf ewf wefwe</p>
-    	</div>
-    	<div class="custom-col">
-    		<span><img src="profiles/markaspot/themes/ntxuva/images/icon_three.png"></span>
-    		<h2>Acompanha</h2>
-    		<p>dwfwef ewf ew fwe f wef ewf ewf wefwe</p>
-    	</div>
-    </div>
-  </div>
-</div>
-
-<footer class="footer navbar-inverse">
-  <?php print render($page['footer']); ?>
-</footer>
+    		<h2>Detecta</h2>
+    		<p>Fica atento à acumulação de lixo no teu bairro</p>

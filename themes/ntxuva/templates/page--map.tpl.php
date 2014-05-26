@@ -7,14 +7,14 @@
 
 <div class="navbar-wrapper">
   <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container-fluid">
+    <div class="container-fluid secondary">
       <div class="navbar-header">
         <?php if ($logo): ?>
           
         <?php endif; ?>
 
         <?php if (!empty($site_name)): ?>
-          <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"></a>
+          <a class="name navbar-brand secondary" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"></a>
         <?php endif; ?>
 
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -69,7 +69,7 @@
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
-
+      
   </div>
 </div>
 <footer class="footer navbar-inverse navbar-fixed-bottom">
