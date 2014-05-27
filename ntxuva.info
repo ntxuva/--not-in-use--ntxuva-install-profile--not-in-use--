@@ -1,8 +1,7 @@
-; Packaging information for ntxuva
-name = "ntxuva"
-description = "Projecto de Monitoria Participativa de Serviços"
-exclusive = "1"
-core = "7.x"
+name = ntxuva
+description = Projecto de Monitoria Participativa de Serviços
+;exclusive = "1"
+core = 7.x
 ; ----------
 ; Dependências
 ; ----------

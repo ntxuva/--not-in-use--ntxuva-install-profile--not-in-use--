@@ -12,7 +12,7 @@ projects[drupal][download][url] = http://ftp.drupal.org/files/projects/drupal-7.
 ; NTXUVA Profile
 projects[ntxuva][type] = profile
 projects[ntxuva][download][type] = "git"
-projects[ntxuva][download][url] = "https://github.com/ntxuva/ntxuva.git"
+projects[ntxuva][download][url] = "http://git.drupal.org/sandbox/jjnf/2274625.git"
 projects[ntxuva][download][branch] = "master"
 
 ; Mark-a-Spot Profile

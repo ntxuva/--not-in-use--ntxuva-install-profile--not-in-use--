@@ -1,9 +1,7 @@
-; ntxuva make file for d.o. usage
-core = "7.x"
-api = "2"
+api = 2
+core = 7.x
 
 ; Modules
-
 projects[ctools][subdir] = "contrib"
 projects[features][subdir] = "contrib"
 projects[entity][subdir] = "contrib"
