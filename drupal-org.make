@@ -1,121 +1,149 @@
-api = 2
-core = 7.x
+; ntxuva make file for d.o. usage
+core = "7.x"
+api = "2"
 
-; Modules
-projects[ctools][subdir] = "contrib"
-projects[features][subdir] = "contrib"
-projects[entity][subdir] = "contrib"
-projects[geolocation][subdir] = "contrib"
-projects[field_group][subdir] = "contrib"
-projects[field_permissions][subdir] = "contrib"
-projects[jquery_update][subdir] = "contrib"
-projects[libraries][subdir] = "contrib"
-projects[panels][subdir] = "contrib"
-projects[services][subdir] = "contrib"
-projects[strongarm][subdir] = "contrib"
-projects[views][subdir] = "contrib"
-projects[views_datasource][subdir] = "contrib"
-projects[better_exposed_filters][subdir] = "contrib"
-projects[bootstrap_fieldgroup][subdir] = "contrib"
+; +++++ Modules +++++
+
+projects[admin_menu][version] = "3.0-rc4"
 projects[admin_menu][subdir] = "contrib"
-projects[field_formatter_settings][subdir] = "contrib"
-projects[field_formatter_class][subdir] = "contrib"
-projects[field_formatter_css_class][subdir] = "contrib"
-projects[geophp][subdir] = "contrib"
 
+projects[ctools][version] = "1.4"
+projects[ctools][subdir] = "contrib"
+
+projects[charts][version] = "2.0-rc1"
 projects[charts][subdir] = "contrib"
+
+projects[date][version] = "2.7"
 projects[date][subdir] = "contrib"
+
+projects[profiler_builder][version] = "1.1"
+projects[profiler_builder][subdir] = "contrib"
+
+projects[features][version] = "2.0"
+projects[features][subdir] = "contrib"
+
+projects[bootstrap_fieldgroup][version] = "1.0"
+projects[bootstrap_fieldgroup][subdir] = "contrib"
+
+projects[field_formatter_class][version] = "1.1"
+projects[field_formatter_class][subdir] = "contrib"
+
+projects[field_formatter_css_class][version] = "1.3"
+projects[field_formatter_css_class][subdir] = "contrib"
+
+projects[field_group][version] = "1.4"
+projects[field_group][subdir] = "contrib"
+
+projects[field_permissions][version] = "1.0-beta2"
+projects[field_permissions][subdir] = "contrib"
+
+projects[geolocation][version] = "1.4"
+projects[geolocation][subdir] = "contrib"
+
+projects[geolocation_osm][version] = "unknown"
+projects[geolocation_osm][subdir] = "contrib"
+
+projects[notify][version] = "1.0"
+projects[notify][subdir] = "contrib"
+
+projects[smtp][version] = "1.0"
 projects[smtp][subdir] = "contrib"
+
+projects[markaspot][version] = "2.x-dev"
+projects[markaspot][subdir] = "contrib"
+
+projects[l10n_update][version] = "1.0"
 projects[l10n_update][subdir] = "contrib"
+
+projects[i18n][version] = "1.11"
 projects[i18n][subdir] = "contrib"
+
+projects[panels][version] = "3.4"
+projects[panels][subdir] = "contrib"
+
+projects[nodeformcols][version] = "1.0"
+projects[nodeformcols][subdir] = "contrib"
+
+projects[oauth][version] = "3.2"
+projects[oauth][subdir] = "contrib"
+
+projects[backup_migrate][version] = "2.8"
 projects[backup_migrate][subdir] = "contrib"
+
+projects[entity][version] = "1.5"
+projects[entity][subdir] = "contrib"
+
+projects[field_formatter_settings][version] = "1.1"
+projects[field_formatter_settings][subdir] = "contrib"
+
+projects[libraries][version] = "2.2"
+projects[libraries][subdir] = "contrib"
+
+projects[login_destination][version] = "1.1"
 projects[login_destination][subdir] = "contrib"
-projects[variable][subdir] = "contrib"
-projects[voipdrupal][subdir] = "contrib"
 
-projects[views_geojson][subdir] = "contrib"
-projects[views_geojson][version] = 1.x-dev
-
-
-projects[twitter][subdir] = "contrib"
-projects[twitter][patch][2132231] = "https://drupal.org/files/issues/Twitter-add_geo_and_entities_Twitter_object_2132231-1_0.patch"
-
+projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = "contrib"
+
+projects[strongarm][version] = "2.0"
+projects[strongarm][subdir] = "contrib"
+
+projects[token][version] = "1.5"
 projects[token][subdir] = "contrib"
 
+projects[twitter][version] = "5.8"
+projects[twitter][subdir] = "contrib"
+
+projects[panels][version] = "3.4"
+projects[panels][subdir] = "contrib"
+
+projects[print][version] = "2.0"
+projects[print][subdir] = "contrib"
+
+projects[services][version] = "3.7"
+projects[services][subdir] = "contrib"
+
+projects[services][version] = "3.7"
+projects[services][subdir] = "contrib"
+
+projects[uuid][version] = "1.0-alpha5"
 projects[uuid][subdir] = "contrib"
-projects[uuid][patch][2161375] = https://drupal.org/files/issues/custom_method_of_UUID_creation_2161375_1.patch
 
-projects[oauth][subdir] = "contrib"
-projects[workbench][subdir] = "contrib"
-
+projects[chosen][version] = "2.0-beta4"
 projects[chosen][subdir] = "contrib"
-projects[chosen][version] = 2.x-dev
 
-projects[geolocation_osm][type] = module
-projects[geolocation_osm][subdir] = "contrib"
-projects[geolocation_osm][download][url] = "http://git.drupal.org/sandbox/markaspot/2182047.git"
+projects[jquery_update][version] = "2.4"
+projects[jquery_update][subdir] = "contrib"
 
-libraries[chosen][type] = libraries
-libraries[chosen][download][type] = get
-libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip"
-libraries[chosen][directory_name] = chosen
+projects[variable][version] = "2.5"
+projects[variable][subdir] = "contrib"
 
-libraries[Leaflet.awesome-markers][type] = libraries
-libraries[Leaflet.awesome-markers][download][type] = git
-libraries[Leaflet.awesome-markers][download][url] = "https://github.com/markaspot/Leaflet.awesome-markers.git"
-libraries[Leaflet.awesome-markers][download][branch] = additional-colors
-libraries[Leaflet.awesome-markers][directory_name] = Leaflet.awesome-markers
+projects[better_exposed_filters][version] = "3.0-beta4"
+projects[better_exposed_filters][subdir] = "contrib"
 
-libraries[Leaflet.draw][type] = libraries
-libraries[Leaflet.draw][download][type] = git
-libraries[Leaflet.draw][download][url] = "https://github.com/Leaflet/Leaflet.draw.git"
-libraries[Leaflet.draw][directory_name] = Leaflet.draw
+projects[views][version] = "3.8"
+projects[views][subdir] = "contrib"
 
+projects[views_datasource][version] = "1.x-dev"
+projects[views_datasource][subdir] = "contrib"
 
-libraries[Leaflet.markercluster][type] = libraries
-libraries[Leaflet.markercluster][download][type] = git
-libraries[Leaflet.markercluster][download][url] = "https://github.com/Leaflet/Leaflet.markercluster.git"
-libraries[Leaflet.markercluster][directory_name] = Leaflet.markercluster
+projects[voipdrupal][version] = "1.0-beta5"
+projects[voipdrupal][subdir] = "contrib"
 
-libraries[leaflet-locatecontrol][type] = libraries
-libraries[leaflet-locatecontrol][download][type] = git
-libraries[leaflet-locatecontrol][download][url] = "https://github.com/domoritz/leaflet-locatecontrol.git"
-libraries[leaflet-locatecontrol][directory_name] = leaflet-locatecontrol
+; +++++ Themes +++++
 
-libraries[leaflet-plugins][type] = libraries
-libraries[leaflet-plugins][download][type] = git
-libraries[leaflet-plugins][download][url] = "https://github.com/shramov/leaflet-plugins.git"
-libraries[leaflet-plugins][directory_name] = leaflet-plugins
-
-libraries[Leaflet][type] = libraries
-libraries[Leaflet][download][type] = file
-libraries[Leaflet][download][url] = "http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.7.2.zip"
-libraries[Leaflet][directory_name] = leaflet
-
-libraries[spin.js][type] = libraries
-libraries[spin.js][download][type] = git
-libraries[spin.js][download][url] = "https://github.com/fgnass/spin.js.git"
-libraries[spin.js][directory_name] = spin.js
-
-libraries[markaspot-font][type] = libraries
-libraries[markaspot-font][download][type] = git
-libraries[markaspot-font][download][url] = "https://github.com/markaspot/markaspot-font.git"
-libraries[markaspot-font][directory_name] = markaspot-font
-
-libraries[proxy][type] = libraries
-libraries[proxy][download][type] = git
-libraries[proxy][download][url] = "https://github.com/markaspot/Simple-php-proxy-script.git"
-libraries[proxy][download][branch] = osm-nominatim
-libraries[proxy][directory_name] = proxy
-
-libraries[bootstrap][download][type] = "get"
-libraries[bootstrap][download][url] = "https://github.com/twbs/bootstrap/archive/v3.1.1.zip"
-libraries[bootstrap][directory_name] = "bootstrap"
-libraries[bootstrap][destination] = "themes/mas"
-libraries[bootstrap][overwrite] = TRUE
-
-
-; Themes
-projects[bootstrap][type] = "theme"
+; ember
 projects[ember][type] = "theme"
+projects[ember][version] = "2.0-alpha2"
+projects[ember][subdir] = "contrib"
+
+; markaspot
+projects[markaspot][type] = "theme"
+projects[markaspot][version] = "2.x-dev"
+projects[markaspot][subdir] = "contrib"
+
+; bootstrap
+projects[bootstrap][type] = "theme"
+projects[bootstrap][version] = "3.0"
+projects[bootstrap][subdir] = "contrib"
+
