@@ -6,6 +6,12 @@ projects[drupal][version] = "7.28"
 ; include the d.o. profile base
 includes[] = "drupal-org.make"
 
+; ntxuva Profile
+projects[ntxuva][type] = profile
+projects[ntxuva][download][type] = "git"
+projects[ntxuva][download][url] = "https://github.com/ntxuva/ntxuva.git"
+projects[ntxuva][download][branch] = "master"
+
 ; +++++ Libraries +++++
 
 ; mapiconmaker
