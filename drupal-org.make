@@ -40,7 +40,6 @@ projects[field_permissions][subdir] = "contrib"
 projects[geolocation][version] = "1.4"
 projects[geolocation][subdir] = "contrib"
 
-projects[geolocation_osm][version] = "unknown"
 projects[geolocation_osm][subdir] = "contrib"
 projects[geolocation_osm][download][url] = "http://git.drupal.org/sandbox/markaspot/2182047.git"
 
@@ -49,9 +48,6 @@ projects[notify][subdir] = "contrib"
 
 projects[smtp][version] = "1.0"
 projects[smtp][subdir] = "contrib"
-
-projects[markaspot][version] = "2.x-dev"
-projects[markaspot][subdir] = "contrib"
 
 projects[l10n_update][version] = "1.0"
 projects[l10n_update][subdir] = "contrib"
