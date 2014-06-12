@@ -22,6 +22,9 @@ projects[profiler_builder][subdir] = "contrib"
 projects[features][version] = "2.0"
 projects[features][subdir] = "contrib"
 
+projects[uuid_features][version] = "1.0-alpha4"
+projects[uuid_features][subdir] = "contrib"
+
 projects[bootstrap_fieldgroup][version] = "1.0"
 projects[bootstrap_fieldgroup][subdir] = "contrib"
 

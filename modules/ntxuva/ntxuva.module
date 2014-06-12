@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ntxuva feature.
+ */
+
+include_once 'ntxuva.features.inc';

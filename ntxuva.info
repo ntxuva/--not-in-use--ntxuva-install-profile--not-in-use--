@@ -70,6 +70,8 @@ dependencies[] = markaspot_logic
 dependencies[] = markaspot_open311
 dependencies[] = markaspot_stats
 dependencies[] = markaspot_uuid
+;ntxuva
+dependencies[] = ntxuva
 ; Multilingual
 dependencies[] = l10n_update
 ; Multilingual - Internationalization
