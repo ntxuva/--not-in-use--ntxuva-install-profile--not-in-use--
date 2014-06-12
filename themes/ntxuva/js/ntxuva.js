@@ -63,6 +63,39 @@
         $('form').unbind('submit').submit();
       }
     });
+
+    //radio buttons
+    var $categoriesContainer = $('.form-radios');
+
+    function toggleCheck($radio) {
+        var checked   = $radio.is(':checked'),
+            $gChecked = [];
+     
+        if (checked) {
+            $radio.parent().addClass('checked').siblings('.checked').removeClass('checked');
+        }
+        else {
+            $radio.parent().removeClass('checked');
+        }
+    };
+
+    $categoriesContainer.find('input.form-radio').on({
+            change: function(e) {
+                toggleCheck($(this));
+            },
+            click: function(e) {
+                e.stopPropagation();
+            },
+            keyup: function() {
+                toggleCheck($(this));
+            },
+            focus: function(event) {
+                _self.$element.addClass('active');
+            },
+            blur: function(event) {                
+                _self.$element.removeClass('active');
+            }
+        });
   });
 
 })(jQuery);

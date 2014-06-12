@@ -45,6 +45,12 @@ body {
   padding: 0 0 20px 0;
   margin: 0 0 40px 40px;
   border-bottom: 1px solid #f2f2f2;
+  position: relative;
+}
+
+#markers-list-view .report .icon-location:before {
+  color: #CC0000;
+  font-size: 3em;  
 }
 
 .view-markers .list-title {
@@ -67,7 +73,7 @@ body {
 }
 
 div.show-markers:hover {
-  background: #ccc;
+  /*background: #ccc;*/
 }
 
 div.show-markers span {
@@ -93,9 +99,12 @@ div.no-markers {
 }
 
 div.show-markers {
-  margin: -100px 0 0 -40px;
+  /*margin: -100px 0 0 -40px;*/
   cursor: pointer;
-  border: 1px solid #e3e3e3;
+  left: -50px;
+  position: absolute;
+  top: 10px;
+/*  border: 1px solid #e3e3e3;
   border-right: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
   -webkit-border-right-top-radius: 4px;
@@ -104,7 +113,7 @@ div.show-markers {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);*/
 }
 
 .pull-left.thumbnail {
@@ -231,7 +240,7 @@ body.toolbar-drawer {
 
 .region.region-footer {
   padding: 10px 15px;
-  color: #fff;
+  color: #F15722;
 }
 
 /* Footer Menue */
@@ -278,7 +287,7 @@ body.page-map {
 
 .page-map .navbar-inner,
 .page-map .footer {
-  opacity: 0.4;
+  opacity: 1;
   -webkit-transition: opacity 500ms ease-out;
   -moz-transition: opacity 500ms ease-out;
   -o-transition: opacity 500ms ease-out;
@@ -288,7 +297,7 @@ body.page-map {
 .page-map .navbar-inner:hover,
 .page-map .footer:hover,
 .page-map .footer:focus {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .page-map .leaflet-top {
@@ -306,6 +315,33 @@ span.marker-category {
   width: 49%;
   font-size: 85%;
   margin: 0 1px 0 0;
+}
+
+span.marker-status.col-md-6, 
+span.marker-category.col-md-6 { 
+  display: block;
+  float: none;
+  font-size: 85%;
+  margin: 20px 0;
+  width: 40%;
+  white-space: normal;
+}
+
+span.marker-category.label-default {
+  background-color: #fff;
+  color: #343434;
+}
+
+span.marker-category .icon-li {
+  display: block;
+  font-size: 8em;
+  margin-bottom: 10px;
+}
+.node-type-report .node-report .field-name-body,
+#markers-list-view .report.node .field-name-body {
+  left: 40%;
+  position: absolute;
+  top: 40%;
 }
 
 .marker-status.col-5F9EA0,
@@ -916,7 +952,6 @@ div.list a h3 {
 
   .main-container {
     margin: 0 auto;
-    min-height: 400px;
   }
 
   .report .show-markers {
@@ -1241,3 +1276,5 @@ div.list a h3 {
 
 /* frontpage */
 
+/* JF */
+.page-gestao ul.links {display: none;}

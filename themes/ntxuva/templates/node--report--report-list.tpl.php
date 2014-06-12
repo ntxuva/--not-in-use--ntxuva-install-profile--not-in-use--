@@ -77,7 +77,11 @@
 ?>
 <article id="node-<?php print $node->nid; ?>" class="report <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-
+<?php
+  $category = $node->field_category[LANGUAGE_NONE][0]['taxonomy_term'];
+  $status   = $node->field_status[LANGUAGE_NONE][0]['taxonomy_term'];
+?>
+	
 
   <header class="clearfix">
     <?php print render($title_prefix); ?>
@@ -91,6 +95,10 @@
         <?php print $submitted; ?>
       </span>
     <?php endif; ?>
+
+    <div class="cat-stat-wrapper">
+        <span class="label label-default marker-category col-<?php echo $category->field_category_hex[LANGUAGE_NONE][0]['value'] ?> col-md-6"><i class="icon-li icon-<?php echo $category->field_category_icon[LANGUAGE_NONE][0]['value'] ?> "></i> <?php echo $category->name?> </span> <span class="label marker-status col-<?php echo $status->field_status_hex[LANGUAGE_NONE][0]['value'] ?> col-md-6"><i class="icon-li icon-<?php echo $status->field_status_icon[LANGUAGE_NONE][0]['value'] ?>"></i> <?php echo $status->name ?></span>
+    </div>
 
 
   </header>
