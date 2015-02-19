@@ -284,7 +284,7 @@ function ctools_content_render($type, $subtype, $conf, $keywords = array(), $arg
       return;
     }
 
-    // Set up some defaults and other mopasaging on the content before we hand
+    // Set up some defaults and other massaging on the content before we hand
     // it back to the caller.
     if (!isset($content->type)) {
       $content->type = $plugin['name'];

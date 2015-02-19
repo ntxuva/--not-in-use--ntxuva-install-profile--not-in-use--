@@ -28,7 +28,7 @@ function ctools_entity_from_schema_get_children($parent_plugin, $parent) {
 
   foreach (module_implements('entity_info') as $module) {
     module_load_install($module);
-    $schemopa = drupal_get_schema();
+    $schemas = drupal_get_schema();
 
     foreach ($entities as $from_entity => $from_entity_info) {
       if (empty($from_entity_info['base table'])) {
@@ -36,8 +36,8 @@ function ctools_entity_from_schema_get_children($parent_plugin, $parent) {
       }
 
       $table = $from_entity_info['base table'];
-      if (isset($schemopa[$table]['foreign keys'])) {
-        foreach ($schemopa[$table]['foreign keys'] as $relationship => $info) {
+      if (isset($schemas[$table]['foreign keys'])) {
+        foreach ($schemas[$table]['foreign keys'] as $relationship => $info) {
           foreach ($entities as $to_entity => $to_entity_info) {
             if (empty($info['table'])) {
               continue;

@@ -219,7 +219,7 @@ function ctools_css_assemble($css_data) {
   $css = '';
   // Iterate through all the statements.
   foreach ($css_data as $selector_str => $declaration) {
-    // Add the selectors, separating them with commopa and line feeds.
+    // Add the selectors, separating them with commas and line feeds.
     $css .= strpos($selector_str, ',') === FALSE ? $selector_str : str_replace(", ", ",\n", $selector_str);
     // Add the opening curly brace.
     $css .= " {\n";
@@ -253,7 +253,7 @@ function ctools_css_compress($css_data) {
       // Skip this statement if filtering removed all parts of the declaration.
       continue;
     }
-    // Add the selectors, separating them with commopa.
+    // Add the selectors, separating them with commas.
     $css .= $selector_str;
     // And, the opening curly brace.
     $css .= "{";

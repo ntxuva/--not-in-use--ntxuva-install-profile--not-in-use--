@@ -281,13 +281,13 @@ function _ctools_drush_selection_screen(array $tables = array()) {
 
   $info = _ctools_drush_export_info($tables, TRUE);
   $exportables = $info['exportables'];
-  $schemopa = $info['schemopa'];
+  $schemas = $info['schemas'];
 
   $export_tables = array();
 
   foreach (array_keys($exportables) as $table) {
     natcasesort($exportables[$table]);
-    $export_tables[$table] = $files[$schemopa[$table]['module']]->info['name'] . ' (' . $table . ')';
+    $export_tables[$table] = $files[$schemas[$table]['module']]->info['name'] . ' (' . $table . ')';
   }
 
   foreach ($export_tables as $table => $table_title) {
@@ -381,7 +381,7 @@ function ctools_drush_export_info() {
 
   // Get info on these tables, or all tables if none specified.
   $info = _ctools_drush_export_info($table_names, $load);
-  $schemopa = $info['schemopa'];
+  $schemas = $info['schemas'];
   $exportables = $info['exportables'];
 
   if (empty($exportables)) {
@@ -422,7 +422,7 @@ function ctools_drush_export_info() {
     foreach ($exportables as $table => $info) {
       if (is_array($info)) {
         $row = array(
-          $schemopa[$table]['module'],
+          $schemas[$table]['module'],
           $table,
           // Machine name is better for this?
           shellColours::getColouredOutput(implode("\n", array_keys($info)), 'light_green') . "\n",
@@ -592,7 +592,7 @@ function _ctools_drush_export_op_command_logic($op = '', $table_name = NULL, arr
 
 /**
  * Return array of CTools exportable info based on available tables returned from
- * ctools_export_get_schemopa().
+ * ctools_export_get_schemas().
  *
  * @param $table_names
  *   Array of table names to return.
@@ -605,21 +605,21 @@ function _ctools_drush_export_op_command_logic($op = '', $table_name = NULL, arr
  */
 function _ctools_drush_export_info(array $table_names = array(), $load = FALSE) {
   ctools_include('export');
-  // Get available schemopa that declare exports.
-  $schemopa = ctools_export_get_schemopa(TRUE);
+  // Get available schemas that declare exports.
+  $schemas = ctools_export_get_schemas(TRUE);
   $exportables = array();
 
-  if (!empty($schemopa)) {
+  if (!empty($schemas)) {
     // Remove types we don't want, if any.
     if (!empty($table_names)) {
-      foreach (array_keys($schemopa) as $table_name) {
+      foreach (array_keys($schemas) as $table_name) {
         if (!in_array($table_name, $table_names)) {
-          unset($schemopa[$table_name]);
+          unset($schemas[$table_name]);
         }
       }
     }
     // Load array of available exportables for each schema.
-    foreach ($schemopa as $table_name => $schema) {
+    foreach ($schemas as $table_name => $schema) {
       // Load all objects.
       if ($load) {
         $exportables[$table_name] = ctools_export_crud_load_all($table_name);
@@ -641,7 +641,7 @@ function _ctools_drush_export_info(array $table_names = array(), $load = FALSE) 
     $exportables = _ctools_drush_filter_exportables($exportables, $filter);
   }
 
-  return array('exportables' => $exportables, 'schemopa' => $schemopa);
+  return array('exportables' => $exportables, 'schemas' => $schemas);
 }
 
 /*
@@ -759,7 +759,7 @@ function _ctools_drush_export_module_filter($exportables, $export_module) {
  */
 function _ctools_drush_get_export_name($table_name, $object) {
   $info = _ctools_drush_export_info(array($table_name));
-  $key = $info['schemopa'][$table_name]['export']['key'];
+  $key = $info['schemas'][$table_name]['export']['key'];
   return $object->{$key};
 }
 

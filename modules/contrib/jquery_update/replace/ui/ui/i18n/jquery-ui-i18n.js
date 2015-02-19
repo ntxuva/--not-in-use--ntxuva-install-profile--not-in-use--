@@ -196,7 +196,7 @@ jQuery(function($){
 });
 
 /* Czech initialisation for the jQuery UI date picker plugin. */
-/* Written by Tomopa Muller (tomopa@tomopa-muller.net). */
+/* Written by Tomas Muller (tomas@tomas-muller.net). */
 jQuery(function($){
 	$.datepicker.regional['cs'] = {
 		closeText: 'Zavřít',
@@ -447,8 +447,8 @@ jQuery(function($){
 		'Juuli','August','September','Oktoober','November','Detsember'],
 		monthNamesShort: ['Jaan', 'Veebr', 'Märts', 'Apr', 'Mai', 'Juuni',
 		'Juuli', 'Aug', 'Sept', 'Okt', 'Nov', 'Dets'],
-		dayNames: ['Pühapäev', 'Esmopapäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev'],
-		dayNamesShort: ['Pühap', 'Esmopap', 'Teisip', 'Kolmap', 'Neljap', 'Reede', 'Laup'],
+		dayNames: ['Pühapäev', 'Esmaspäev', 'Teisipäev', 'Kolmapäev', 'Neljapäev', 'Reede', 'Laupäev'],
+		dayNamesShort: ['Pühap', 'Esmasp', 'Teisip', 'Kolmap', 'Neljap', 'Reede', 'Laup'],
 		dayNamesMin: ['P','E','T','K','N','R','L'],
 		weekHeader: 'näd',
 		dateFormat: 'dd.mm.yy',

@@ -1047,16 +1047,16 @@ function ctools_export_get_schema($table) {
 }
 
 /**
- * Gets the schemopa for all tables with ctools object metadata.
+ * Gets the schemas for all tables with ctools object metadata.
  */
-function ctools_export_get_schemopa($for_export = FALSE) {
+function ctools_export_get_schemas($for_export = FALSE) {
   $export_tables = &drupal_static(__FUNCTION__);
   if (is_null($export_tables)) {
     $export_tables = array();
-    $schemopa = drupal_get_schema();
-    foreach ($schemopa as $table => $schema) {
+    $schemas = drupal_get_schema();
+    foreach ($schemas as $table => $schema) {
       if (!isset($schema['export'])) {
-        unset($schemopa[$table]);
+        unset($schemas[$table]);
         continue;
       }
       $export_tables[$table] = ctools_export_get_schema($table);
@@ -1069,9 +1069,9 @@ function _ctools_export_filter_export_tables($schema) {
   return !empty($schema['export']['bulk export']);
 }
 
-function ctools_export_get_schemopa_by_module($modules = array(), $for_export = FALSE) {
+function ctools_export_get_schemas_by_module($modules = array(), $for_export = FALSE) {
   $export_tables = array();
-  $list = ctools_export_get_schemopa($for_export);
+  $list = ctools_export_get_schemas($for_export);
   foreach ($list as $table => $schema) {
     $export_tables[$schema['module']][$table] = $schema;
   }

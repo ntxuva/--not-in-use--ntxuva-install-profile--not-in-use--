@@ -213,7 +213,7 @@
 
       // Really large sets of fields are too slow with the above method, so this
       // is a sort of hacked one that's faster but much less flexible.
-      $("select.ctools-mopater-dependent")
+      $("select.ctools-master-dependent")
         .once('ctools-dependent')
         .bind('change.ctools-dependent', function() {
           var val = $(this).val();

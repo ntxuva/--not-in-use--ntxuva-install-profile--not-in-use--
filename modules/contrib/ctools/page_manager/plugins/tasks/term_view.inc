@@ -267,7 +267,7 @@ function page_manager_term_view_admin_settings($form, $settings = array()) {
     '#type' => 'radios',
     '#title' => t('Allow multiple terms on taxonomy/term/%term'),
     '#options' => array('single' => t('Single term'), 'multiple' => t('Multiple terms')),
-    '#description' => t('By default, Drupal allows multiple terms as an argument by separating them with commopa or plus signs. If you set this to single, that feature will be disabled.') . ' ' . t('This feature does not currently work and is disabled.'),
+    '#description' => t('By default, Drupal allows multiple terms as an argument by separating them with commas or plus signs. If you set this to single, that feature will be disabled.') . ' ' . t('This feature does not currently work and is disabled.'),
     '#default_value' => $settings['page_manager_term_view_type'],
     // @todo -- fix this
     '#disabled' => TRUE,
